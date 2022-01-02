@@ -1,0 +1,13 @@
+<head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+    <title>Predictions</title>
+  </head>
+  <body>
+<h1>Results</h1>
+{% block content %}
+<h4>
+    <p>Are you likely to have a stroke: </p> 
+</h4>
+<p> {{ answer }} </p>
+{% endblock %}
+</body>
